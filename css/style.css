@@ -1,8 +1,5 @@
-/*Key issues:
-moving the wav line down (?) is that required.
-10px spaicng between rows????? It's too chunky.
-Can't get the images to be centered any way but this way. Is it related to how I did my grid?
-My columns aren't touching the borders of the grid, but not sure if that's required. Related to the row thing?
+/*
+
 */
 
 body{
@@ -39,6 +36,7 @@ nav a.current{
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-transform: uppercase;
+    text-underline-offset: 8px;
 }
 
 
@@ -64,18 +62,17 @@ h1, h2, h3{
     /*Set margin */
     margin-top: 10px;
 }
-.grid{
+.grid {
     /*Set width, margin, border properties, background color, and grid properties */
     display: grid;
     grid-template-columns: 30% 30% 30%;
     width: 90%;
     border-radius: 25px;
-    grid-gap: 10px;
-    /* row-gap: 10px; */
+    row-gap: 10px;
     margin: 0 auto;
     border: 2px dashed black;
     background-color: lightblue;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .grid div{
@@ -83,7 +80,7 @@ h1, h2, h3{
     border: 2px solid black;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: white;
 }
 
@@ -99,17 +96,17 @@ h1, h2, h3{
 
 .grid div:nth-child(3n+1)  {
     /* Left colum; Set box shadow */
-    box-shadow: 2px 0px 5px 0px lightcoral;
+    box-shadow: 2px 0px 5px 0px #0E89D2;
 }
 
 .grid div:nth-child(3n)  {
     /* Right colum; Set box shadow */
-    box-shadow: -2px 0px 5px 0px lightcoral;
+    box-shadow: -2px 0px 5px 0px #0E89D2;
 }
 
 .grid div:nth-child(3n+2)  {
     /* Center column; Set box shadow */
-    box-shadow: 2px 0px 5px 0px lightcoral, -2px 0px 5px 0px lightcoral;
+    box-shadow: 2px 0px 5px 0px #0E89D2, -2px 0px 5px 0px #0E89D2;
 }
 
 
