@@ -96,17 +96,17 @@ h1, h2, h3{
 
 .grid div:nth-child(3n+1)  {
     /* Left colum; Set box shadow */
-    box-shadow: 2px 0px 5px 0px #0E89D2;
+    box-shadow: 3px 0px 5px #0E89D2;
 }
 
 .grid div:nth-child(3n)  {
     /* Right colum; Set box shadow */
-    box-shadow: -2px 0px 5px 0px #0E89D2;
+    box-shadow: -3px 0px 5px #0E89D2;
 }
 
 .grid div:nth-child(3n+2)  {
     /* Center column; Set box shadow */
-    box-shadow: 2px 0px 5px 0px #0E89D2, -2px 0px 5px 0px #0E89D2;
+    box-shadow: 3px 0px 5px #0E89D2, -3px 0px 5px 0px #0E89D2;
 }
 
 
@@ -123,5 +123,5 @@ p {
 .grid ul li{
     line-height: 100%;
     margin: 0px 0px 20px 30px;
-    list-style: url('/images/sketchbook.png');
+    list-style: url('../images/sketchbook.png');
 }
